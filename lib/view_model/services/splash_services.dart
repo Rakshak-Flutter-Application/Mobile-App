@@ -15,10 +15,10 @@ class SplashServices {
       log(value.token.toString());
       if (value.token == 'null' || value.token == '') {
         await Future.delayed(const Duration(seconds: 3));
-        Navigator.pushNamed(context, RoutesName.login);
+        Navigator.pushNamed(context, RoutesName.user_login);
       } else {
         await Future.delayed(const Duration(seconds: 3));
-        Navigator.pushNamed(context, RoutesName.home);
+        Navigator.pushNamed(context, RoutesName.user_home);
       }
     }).onError((error, stackTrace) {
       Utils.flushbarErrorMessage(error.toString(), context);

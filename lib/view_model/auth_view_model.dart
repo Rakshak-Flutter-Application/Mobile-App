@@ -22,7 +22,7 @@ class AuthViewModel extends ChangeNotifier {
     myAuth.loginApi(data).then((value) {
       setLoading(false);
       Utils.toastMessage("Login Successful");
-      Navigator.pushNamed(context, RoutesName.home);
+      Navigator.pushNamed(context, RoutesName.user_home);
       if (kDebugMode) {
         log(value.toString());
       }
@@ -40,7 +40,7 @@ class AuthViewModel extends ChangeNotifier {
     myAuth.signUpApi(data).then((value) {
       setLoading(false);
       Utils.toastMessage("Successful Registered");
-      Navigator.pushNamed(context, RoutesName.home);
+      Navigator.pushNamed(context, RoutesName.user_home);
       if (kDebugMode) {
         log(value.toString());
       }
