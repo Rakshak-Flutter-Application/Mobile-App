@@ -19,7 +19,7 @@ class _SplashScreenState extends State<ChoiceScreen> {
             child: InkWell(
               onTap: () => Navigator.pushNamed(context, RoutesName.user_login),
               child: const Text(
-                "Victim",
+                "Citizen",
                 style: TextStyle(fontSize: 50),
               ),
             ),
