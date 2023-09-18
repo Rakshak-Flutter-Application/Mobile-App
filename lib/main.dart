@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rakshak_sos/res/color.dart';
 import 'package:rakshak_sos/utils/routes/route.dart';
 import 'package:rakshak_sos/utils/routes/routes_name.dart';
 
@@ -11,9 +12,24 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    final textSize = MediaQuery.of(context).size.width;
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: RoutesName.otp,
+      theme: ThemeData(
+          primaryColor: AppColors.bgColor,
+          scaffoldBackgroundColor: AppColors.bgColor,
+          iconTheme: const IconThemeData(color: AppColors.iconColor),
+          appBarTheme: const AppBarTheme(
+              iconTheme: IconThemeData(color: AppColors.iconColor)),
+          textTheme: TextTheme(
+              bodyLarge: TextStyle(
+                  fontSize: textSize * .03, color: AppColors.textColor),
+              bodyMedium: TextStyle(fontSize: textSize * .04),
+              headlineLarge: TextStyle(
+                  fontSize: textSize * .2, color: AppColors.textColor),
+              displayLarge: TextStyle(
+                  fontSize: textSize * .1, color: AppColors.textColor))),
+      initialRoute: RoutesName.choice,
       onGenerateRoute: Routes.generateRoute,
     );
   }

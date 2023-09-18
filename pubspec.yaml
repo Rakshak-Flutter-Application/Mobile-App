@@ -39,6 +39,8 @@ dependencies:
   another_flushbar: ^1.12.30
   fluttertoast: ^8.2.2
   shared_preferences: ^2.2.1
+  permission_handler: ^11.0.0
+  geolocator: ^10.0.1
 
 dev_dependencies:
   flutter_test:

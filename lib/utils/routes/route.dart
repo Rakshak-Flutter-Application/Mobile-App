@@ -23,15 +23,18 @@ class Routes {
         return MaterialPageRoute(
             builder: (context) => const AgencyLoginScren());
       case RoutesName.user_signup:
-        return MaterialPageRoute(
-            builder: (context) => const UserSignupScreen());
+        return MaterialPageRoute(builder: (context) => const UserSignupScreen());
       case RoutesName.agency_signup:
         return MaterialPageRoute(
             builder: (context) => const AgencySignupScren());
       case RoutesName.choice:
         return MaterialPageRoute(builder: (context) => const ChoiceScreen());
       case RoutesName.otp:
-        return MaterialPageRoute(builder: (context) => const OTPScreen());
+        final String phoneNumber = settings.arguments.toString();
+        return MaterialPageRoute(
+            builder: (context) => OTPScreen(
+                  phoneNumber: phoneNumber,
+                ));
 
       default:
         return MaterialPageRoute(builder: (_) {
