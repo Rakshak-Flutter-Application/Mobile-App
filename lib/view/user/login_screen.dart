@@ -149,7 +149,15 @@ class _LoginScreenState extends State<UserLoginScreen> {
               ),
               RoundButton(
                   text: 'Sign up',
-                  func: () => Navigator.pushNamed(context, RoutesName.otp))
+                  func: () {
+                    if (_formKey.currentState!.validate()) {
+                      _formKey.currentState!.save();
+                      print('Phone Number: $_phoneNumber');
+                      phoneNumber = _phoneNumber!;
+                      Navigator.pushNamed(context, RoutesName.otp,
+                          arguments: _phoneNumber);
+                    }
+                  })
             ]),
       ),
     );

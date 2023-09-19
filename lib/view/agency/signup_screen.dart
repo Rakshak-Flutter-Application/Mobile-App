@@ -69,6 +69,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                           borderRadius: BorderRadius.circular(
                                               size.width * .03))),
                                 ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
                                 TextFormField(
                                   decoration: InputDecoration(
                                       hintText: 'Agency Full Name',
@@ -79,6 +82,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                       border: OutlineInputBorder(
                                           borderRadius: BorderRadius.circular(
                                               size.width * .1))),
+                                ),
+                                const SizedBox(
+                                  height: 5,
                                 ),
                                 TextFormField(
                                   decoration: InputDecoration(
@@ -91,6 +97,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                           borderRadius: BorderRadius.circular(
                                               size.width * .1))),
                                 ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
                                 TextFormField(
                                   decoration: InputDecoration(
                                       fillColor: AppColors.generalColor,
@@ -101,6 +110,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                       border: OutlineInputBorder(
                                           borderRadius: BorderRadius.circular(
                                               size.width * .1))),
+                                ),
+                                const SizedBox(
+                                  height: 5,
                                 ),
                                 TextFormField(
                                   decoration: InputDecoration(
@@ -119,6 +131,7 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                           Visibility(
                             visible: formSecondPage,
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 TextFormField(
                                   decoration: InputDecoration(
@@ -131,6 +144,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                           borderRadius: BorderRadius.circular(
                                               size.width * .1))),
                                 ),
+                                const SizedBox(
+                                  height: 5,
+                                ),
                                 TextFormField(
                                   decoration: InputDecoration(
                                       hintText: 'Contact number',
@@ -141,6 +157,9 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                       border: OutlineInputBorder(
                                           borderRadius: BorderRadius.circular(
                                               size.width * .1))),
+                                ),
+                                const SizedBox(
+                                  height: 5,
                                 ),
                                 TextFormField(
                                   decoration: InputDecoration(
@@ -175,7 +194,8 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                               ),
                               Text(
                                 !formSecondPage ? "1/2" : "2/2",
-                                style: const TextStyle(color: AppColors.textColor),
+                                style:
+                                    const TextStyle(color: AppColors.textColor),
                               ),
                               Visibility(
                                 visible: !formSecondPage,
