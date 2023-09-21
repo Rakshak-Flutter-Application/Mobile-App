@@ -38,7 +38,8 @@ class Routes {
                   phoneNumber: phoneNumber,
                 ));
       case RoutesName.choice_game:
-        return MaterialPageRoute(builder: (context) => EarthquakeSafetyGame());
+        return MaterialPageRoute(
+            builder: (context) => const EarthquakeSafetyGame());
       default:
         return MaterialPageRoute(builder: (_) {
           return const Scaffold(
