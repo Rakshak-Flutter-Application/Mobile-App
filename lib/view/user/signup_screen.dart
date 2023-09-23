@@ -30,6 +30,7 @@ class _SignUpScreenState extends State<UserSignupScreen> {
   Future<void> locPermission() async {
     PermissionStatus status = await Permission.location.request();
     if (status.isGranted) {
+      // ignore: unused_local_variable
       PermissionStatus status = await Permission.locationAlways.request();
 
       Position position = await Geolocator.getCurrentPosition(

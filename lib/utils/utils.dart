@@ -10,7 +10,7 @@ class Utils {
   }
 
   static toastMessage(String message) {
-    Fluttertoast.showToast(msg: message);
+    Fluttertoast.showToast(msg: message, fontSize: 20);
   }
 
   static void flushbarErrorMessage(String message, BuildContext context) {
@@ -18,14 +18,18 @@ class Utils {
         context: context,
         flushbar: Flushbar(
           margin: const EdgeInsets.all(10),
-          padding: const EdgeInsets.all(10),
-          positionOffset: 20,
+          padding: const EdgeInsets.all(15),
+          positionOffset: 30,
           flushbarPosition: FlushbarPosition.TOP,
           forwardAnimationCurve: Curves.bounceIn,
-          reverseAnimationCurve: Curves.bounceOut,
-          icon: const Icon(Icons.error, color: Colors.white),
-          backgroundColor: Colors.red,
+          icon: const Icon(
+            Icons.check_box,
+            color: Colors.white,
+            size: 25,
+          ),
+          backgroundColor: Colors.lightGreen,
           message: message,
+          messageSize: 20,
           borderRadius: BorderRadius.circular(10),
           duration: const Duration(seconds: 3),
         )..show(context));
