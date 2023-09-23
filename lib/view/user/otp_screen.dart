@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:rakshak_sos/res/color.dart';
 import 'package:rakshak_sos/res/components/otp_form.dart';
@@ -45,6 +44,7 @@ class _OTPScreenState extends State<OTPScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     final size = MediaQuery.of(context).size;
     final number = widget.phoneNumber.substring(5, 9);
     return Scaffold(
@@ -114,6 +114,7 @@ class _OTPScreenState extends State<OTPScreen> {
           ),
         ),
       ),
+
     );
   }
 }

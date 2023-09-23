@@ -10,4 +10,15 @@ class RoutesName {
   static const String agency_signup = "agency_signup_screen";
   static const String choice = "choice_screen";
   static const String choice_game = "choice_game";
+  static const String cyclone = "disaster_datasheet";
+  static const String list = "list";
+  static const String earthquake = "earthquake";
+  static const String floods = "floods";
+  static const String rail = "rail";
+  static const String others = "others";
+  static const String flight = "flight";
+  static const String landslides = "landslides";
+  static const String fire = "fire";
+  static const String quizzes = "quizzes";
+  static const String answer = "answerr";
 }
