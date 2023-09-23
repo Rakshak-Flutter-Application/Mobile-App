@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
           primaryColor: AppColors.bgColor,
-          scaffoldBackgroundColor: AppColors.bgColor,
+          scaffoldBackgroundColor: AppColors.ScreenColor,
           iconTheme: const IconThemeData(color: AppColors.iconColor),
           appBarTheme: const AppBarTheme(
               iconTheme: IconThemeData(color: AppColors.iconColor)),
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                   fontSize: textSize * .2, color: AppColors.textColor),
               displayLarge: TextStyle(
                   fontSize: textSize * .1, color: AppColors.textColor))),
-      initialRoute: RoutesName.choice,
+      initialRoute: RoutesName.choice_game,
       onGenerateRoute: Routes.generateRoute,
     );
   }
