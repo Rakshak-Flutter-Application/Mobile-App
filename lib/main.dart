@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
                   fontSize: textSize * .2, color: AppColors.textColor),
               displayLarge: TextStyle(
                   fontSize: textSize * .1, color: AppColors.textColor))),
-      initialRoute: RoutesName.choice_game,
+      initialRoute: RoutesName.choice,
       onGenerateRoute: Routes.generateRoute,
     );
   }

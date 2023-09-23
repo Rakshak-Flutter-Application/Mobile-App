@@ -181,7 +181,6 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                     child: Row(
                       children: [
                         SizedBox(
-                          width: size.width * .6,
                           child: Padding(
                             padding: const EdgeInsets.all(20.0),
                             child: Text(
@@ -191,10 +190,10 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                             ),
                           ),
                         ),
-                        Image.asset(
-                          'assets/images/agency_contact_list.jpg',
-                          scale: 15,
-                        ),
+                        // Image.asset(
+                        //   'assets/images/agency_contact_list.jpg',
+                        //   scale: 15,
+                        // ),
                       ],
                     ),
                   ),
@@ -283,10 +282,10 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                             ),
                           ),
                         ),
-                        Image.asset(
-                          'assets/images/quiz_logo.jpg',
-                          scale: 15,
-                        ),
+                        // Image.asset(
+                        //   'assets/images/quiz_logo.jpg',
+                        //   scale: 15,
+                        // ),
                       ],
                     ),
                   ),

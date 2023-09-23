@@ -7,6 +7,5 @@ class AppColors {
   static Color bgColor = Colors.purple.shade500;
   static const Color textColor = Colors.white;
   static const Color iconColor = Colors.deepPurple;
-  static const Color buttonColor = Color.fromARGB(30, 255, 255, 255);
   static const Color screenColor = Color.fromARGB(255, 235, 180, 255);
 }
