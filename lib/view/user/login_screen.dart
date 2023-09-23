@@ -161,49 +161,5 @@ class _LoginScreenState extends State<UserLoginScreen> {
             ]),
       ),
     );
-    // return Scaffold(
-    //   body: Padding(
-    //     padding: EdgeInsets.all(size.width * .1),
-    //     child: Column(
-    //       mainAxisAlignment: MainAxisAlignment.center,
-    //       crossAxisAlignment: CrossAxisAlignment.center,
-    //       children: [
-    //         SizedBox(
-    //           height: size.height * .15,
-    //         ),
-    //         Center(
-    //           child: Text(
-    //             "Hello",
-    //             style: TextStyle(fontSize: size.width * .25),
-    //           ),
-    //         ),
-    //         Text(
-    //           "Sign in to your account",
-    //           style: TextStyle(fontSize: size.width * .055),
-    //         ),
-    //         SizedBox(
-    //           height: size.height * .07,
-    //         ),
-
-    //         SizedBox(
-    //           height: size.width * .2,
-    //         ),
-    //         InkWell(
-    //           onTap: () => Navigator.pushNamed(context, RoutesName.otp),
-    //           child: Row(
-    //             mainAxisAlignment: MainAxisAlignment.end,
-    //             children: [
-    //               Text(
-    //                 "Sign in ",
-    //                 style: TextStyle(fontSize: size.width * .08),
-    //               ),
-    //               const Icon(Icons.arrow_forward)
-    //             ],
-    //           ),
-    //         ),
-    //       ],
-    //     ),
-    //   ),
-    // );
   }
 }

@@ -42,7 +42,7 @@ class MainScreen extends StatelessWidget {
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           primaryColor: AppColors.bgColor,
-          scaffoldBackgroundColor: AppColors.bgColor,
+          scaffoldBackgroundColor: AppColors.screenColor,
           iconTheme: const IconThemeData(color: AppColors.iconColor),
           appBarTheme: const AppBarTheme(
               titleTextStyle: TextStyle(color: AppColors.textColor),
@@ -56,7 +56,7 @@ class MainScreen extends StatelessWidget {
                   fontSize: textSize * .2, color: AppColors.textColor),
               displayLarge: TextStyle(
                   fontSize: textSize * .1, color: AppColors.textColor))),
-      initialRoute: RoutesName.user_event,
+      initialRoute: RoutesName.choice_game,
       onGenerateRoute: Routes.generateRoute,
     );
   }

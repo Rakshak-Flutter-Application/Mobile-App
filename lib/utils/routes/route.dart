@@ -6,6 +6,7 @@ import 'package:rakshak_sos/view/agency/homescreen.dart';
 import 'package:rakshak_sos/view/agency/login_screen.dart';
 import 'package:rakshak_sos/view/agency/signup_screen.dart';
 import 'package:rakshak_sos/view/user/event_screen.dart';
+import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/user/home_screen.dart';
 import 'package:rakshak_sos/view/user/login_screen.dart';
 import 'package:rakshak_sos/view/user/otp_screen.dart';
@@ -47,7 +48,9 @@ class Routes {
             builder: (context) => OTPScreen(
                   phoneNumber: phoneNumber,
                 ));
-
+      case RoutesName.choice_game:
+        return MaterialPageRoute(
+            builder: (context) => const EarthquakeSafetyGame());
       default:
         return MaterialPageRoute(builder: (_) {
           return const Scaffold(

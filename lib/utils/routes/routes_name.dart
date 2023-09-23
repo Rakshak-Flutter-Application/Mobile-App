@@ -12,4 +12,5 @@ class RoutesName {
   static const String user_event = "User Event Screen";
   static const String create_event = "Create Event Screen";
   static const String agency_event = "Agency Event Screen";
+  static const String choice_game = "choice_game";
 }
