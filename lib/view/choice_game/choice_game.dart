@@ -204,7 +204,7 @@ class _EarthquakeSafetyGameState extends State<EarthquakeSafetyGame> {
                                       onTap: () {
                                         gameModel.resetGame();
                                       },
-                                      child: CircleAvatar(
+                                      child: const CircleAvatar(
                                         backgroundColor: AppColors
                                             .bgColor, // Change color as needed
                                         child: Icon(
@@ -309,3 +309,4 @@ class ChoiceTile extends StatelessWidget {
     );
   }
 }
+

@@ -45,7 +45,15 @@ class Routes {
         return MaterialPageRoute(
             builder: (context) => const EarthquakeSafetyGame());
       case RoutesName.otp:
-        return MaterialPageRoute(builder: (context) => const OTPScreen());
+        
+   final String phoneNumber = settings.arguments.toString();
+        return MaterialPageRoute(
+            builder: (context) => OTPScreen(
+                  phoneNumber: phoneNumber,
+                ));
+      case RoutesName.choice_game:
+        return MaterialPageRoute(
+            builder: (context) => const EarthquakeSafetyGame());
       case RoutesName.cyclone:
         return MaterialPageRoute(builder: (context) => const Cyclone());
       case RoutesName.list:
