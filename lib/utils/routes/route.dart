@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:rakshak_sos/utils/routes/routes_name.dart';
+import 'package:rakshak_sos/view/agency/events/create_event_screen.dart';
+import 'package:rakshak_sos/view/agency/events/event_list_screen.dart';
 import 'package:rakshak_sos/view/agency/homescreen.dart';
 import 'package:rakshak_sos/view/agency/login_screen.dart';
 import 'package:rakshak_sos/view/agency/signup_screen.dart';
+import 'package:rakshak_sos/view/user/event_screen.dart';
 import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/choice_screen.dart';
 import 'package:rakshak_sos/view/user/disasterDatasheet/cyclone_datasheet.dart';
@@ -41,11 +44,16 @@ class Routes {
             builder: (context) => const AgencySignupScren());
       case RoutesName.choice:
         return MaterialPageRoute(builder: (context) => const ChoiceScreen());
-      case RoutesName.choice_game:
+
+      case RoutesName.user_event:
+        return MaterialPageRoute(builder: (context) => const UserEventScreen());
+      case RoutesName.create_event:
         return MaterialPageRoute(
-            builder: (context) => const EarthquakeSafetyGame());
+            builder: (context) => const CreateEventScreen());
+      case RoutesName.agency_event:
+        return MaterialPageRoute(
+            builder: (context) => const AgencyEventScren());
       case RoutesName.otp:
-        
    final String phoneNumber = settings.arguments.toString();
         return MaterialPageRoute(
             builder: (context) => OTPScreen(
