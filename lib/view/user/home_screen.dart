@@ -56,6 +56,13 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                 size: 40,
               ),
               label: 'Profile'),
+              //events
+               BottomNavigationBarItem(
+              icon: Icon(
+                Icons.event,
+                size: 40,
+              ),
+              label: 'Events'),
 
           //settings
         ],

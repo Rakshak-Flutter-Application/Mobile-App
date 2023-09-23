@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:rakshak_sos/res/color.dart';
-import 'package:rakshak_sos/utils/routes/routes_name.dart';
 
-class UserDashBoardScreen extends StatefulWidget {
-  const UserDashBoardScreen({super.key});
+class AgencyDashBoardScreen extends StatefulWidget {
+  const AgencyDashBoardScreen({super.key});
 
   @override
-  State<UserDashBoardScreen> createState() => _UserDashBoardScreenState();
+  State<AgencyDashBoardScreen> createState() => _AgencyDashBoardScreenState();
 }
 
-class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
+class _AgencyDashBoardScreenState extends State<AgencyDashBoardScreen> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -49,11 +48,11 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.all(22.0),
+              padding: EdgeInsets.all(22.0),
               child: Align(
                 alignment: Alignment.topLeft,
                 child: Text(
-                  "Hi, Sneha 😊",
+                  "Hello, Saviour",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -96,7 +95,7 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                       width: size.width * .5,
                       child: Center(
                         child: Text(
-                          "SOS",
+                          "Alert",
                           style: TextStyle(
                               fontSize: 22,
                               fontWeight: FontWeight.bold,
@@ -109,36 +108,6 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
               ],
             ),
 
-            //datasheet
-            Card(
-              elevation: 20,
-              child: Container(
-                width: double.infinity,
-                height: 60,
-                child: InkWell(
-                  onTap: () {},
-                  child: SizedBox(
-                    width: size.width * .6,
-                    child: GestureDetector(
-                      onTap: () =>
-                          Navigator.pushNamed(context, RoutesName.list),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Center(
-                          child: Text(
-                            "Previous Disaster Datasheet",
-                            style: TextStyle(
-                              color: Colors.grey.shade500,
-                              fontSize: 20,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            ),
             //MEssages
 
             Padding(
@@ -193,98 +162,6 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                         ),
                         Image.asset(
                           'assets/images/agency_contact_list.jpg',
-                          scale: 15,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
-            ),
-
-            //Emergency contact list
-            Card(
-              elevation: 5,
-              child: Container(
-                height: size.height * .5,
-                width: size.height * .45,
-                child: Column(
-                  children: [
-                    Text(
-                      "Emergency Contact List",
-                      style:
-                          TextStyle(fontSize: 22, fontWeight: FontWeight.w500),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 12.0),
-                      child: Container(
-                        height: 50,
-                        color: Color.fromARGB(255, 218, 202, 240),
-                        child: const Center(
-                            child: Text('National Emergency Number')),
-                      ),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Color.fromARGB(255, 218, 202, 240),
-                      child: const Center(child: Text('Fire')),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Color.fromARGB(255, 218, 202, 240),
-                      child: const Center(child: Text('Police')),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Color.fromARGB(255, 218, 202, 240),
-                      child: const Center(child: Text('Ambulance')),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Color.fromARGB(255, 218, 202, 240),
-                      child: const Center(child: Text('Women Helpline')),
-                    ),
-                    Container(
-                      height: 50,
-                      color: Color.fromARGB(255, 218, 202, 240),
-                      child: const Center(
-                          child: Text(
-                              'Relief Commissioner For Natural Calamities')),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-
-            //quiz
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
-                elevation: 20,
-                child: Container(
-                  width: double.infinity,
-                  height: 80,
-                  child: InkWell(
-                    onTap: () {},
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: size.width * .6,
-                          child: GestureDetector(
-                            onTap: () => Navigator.pushNamed(
-                                context, RoutesName.quizzes),
-                            child: Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Quizzzzzz",
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 20),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Image.asset(
-                          'assets/images/quiz_logo.jpg',
                           scale: 15,
                         ),
                       ],
