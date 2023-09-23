@@ -230,7 +230,7 @@ class _SignUpScreenState extends State<UserSignupScreen> {
     );
   }
 
-  void _submitForm() {
+  void _submitForm() async {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save(); // Save form data
 
@@ -245,7 +245,7 @@ class _SignUpScreenState extends State<UserSignupScreen> {
       print('Emergency Contact Phone Number: $_emergencyContactPhoneNumber');
 
       // After processing, you can navigate to the next screen or take any other actions.
-      Navigator.pushNamed(context, RoutesName.user_home);
+      await Navigator.pushNamed(context, RoutesName.user_home);
     }
   }
 }
