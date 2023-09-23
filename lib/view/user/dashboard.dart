@@ -293,6 +293,38 @@ class _UserDashBoardScreenState extends State<UserDashBoardScreen> {
                 ),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                elevation: 20,
+                child: Container(
+                  width: double.infinity,
+                  height: 80,
+                  child: InkWell(
+                    onTap: () {},
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          width: size.width * .6,
+                          child: GestureDetector(
+                            onTap: () => Navigator.pushNamed(
+                                context, RoutesName.choice_game),
+                            child: Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Text(
+                                "Safety Gamme",
+                                style: TextStyle(
+                                    color: Colors.black, fontSize: 20),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

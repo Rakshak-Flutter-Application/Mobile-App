@@ -3,6 +3,7 @@ import 'package:rakshak_sos/utils/routes/routes_name.dart';
 import 'package:rakshak_sos/view/agency/homescreen.dart';
 import 'package:rakshak_sos/view/agency/login_screen.dart';
 import 'package:rakshak_sos/view/agency/signup_screen.dart';
+import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/choice_screen.dart';
 import 'package:rakshak_sos/view/user/disasterDatasheet/cyclone_datasheet.dart';
 import 'package:rakshak_sos/view/user/disasterDatasheet/earthquake.dart';
@@ -40,6 +41,9 @@ class Routes {
             builder: (context) => const AgencySignupScren());
       case RoutesName.choice:
         return MaterialPageRoute(builder: (context) => const ChoiceScreen());
+      case RoutesName.choice_game:
+        return MaterialPageRoute(
+            builder: (context) => const EarthquakeSafetyGame());
       case RoutesName.otp:
         return MaterialPageRoute(builder: (context) => const OTPScreen());
       case RoutesName.cyclone:

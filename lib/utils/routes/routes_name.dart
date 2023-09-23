@@ -9,6 +9,7 @@ class RoutesName {
   static const String user_signup = "user_signup_screen";
   static const String agency_signup = "agency_signup_screen";
   static const String choice = "choice_screen";
+  static const String choice_game = "choice_game";
   static const String cyclone = "disaster_datasheet";
   static const String list = "list";
   static const String earthquake = "earthquake";
