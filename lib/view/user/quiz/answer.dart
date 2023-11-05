@@ -11,16 +11,23 @@ class Answer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // use SizedBox for white space instead of Container
-    return SizedBox(
+    return Container(
+      padding: const EdgeInsets.all(5),
       width: double.infinity,
       child: ElevatedButton(
         onPressed: selectHandler(),
         style: ButtonStyle(
-            textStyle: MaterialStateProperty.all(
-                const TextStyle(color: Colors.white)),
-            backgroundColor: MaterialStateProperty.all(Colors.green)),
-        child: Text(answerText),
+            textStyle:
+                MaterialStateProperty.all(const TextStyle(color: Colors.white)),
+            backgroundColor:
+                MaterialStateProperty.all(Color.fromRGBO(158, 169, 255, 1.0))),
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Text(
+            answerText,
+            style: TextStyle(color: Colors.black),
+          ),
+        ),
       ),
     );
   }

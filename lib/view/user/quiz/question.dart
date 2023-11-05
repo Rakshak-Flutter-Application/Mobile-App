@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class Question extends StatelessWidget {
   final String questionText;
   const Question(this.questionText, {Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class Question extends StatelessWidget {
       margin: const EdgeInsets.all(10),
       child: Text(
         questionText,
-        style: const TextStyle(fontSize: 28),
+        style: const TextStyle(fontSize: 18),
         textAlign: TextAlign.center,
       ),
     );

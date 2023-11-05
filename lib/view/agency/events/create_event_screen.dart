@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:rakshak_sos/model/event_model.dart';
 import 'package:rakshak_sos/utils/routes/routes_name.dart';

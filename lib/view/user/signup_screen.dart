@@ -87,6 +87,10 @@ class _SignUpScreenState extends State<UserSignupScreen> {
                           ),
                           SizedBox(height: size.height * .01),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             onSaved: (value) => _fullName = value!,
                             validator: (value) {
                               if (value!.isEmpty) {
@@ -109,6 +113,10 @@ class _SignUpScreenState extends State<UserSignupScreen> {
                           ),
                           SizedBox(height: size.height * .005),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             initialValue: _phoneNumber,
                             readOnly: true,
                             onSaved: (value) => _phoneNumber = value!,
@@ -128,24 +136,28 @@ class _SignUpScreenState extends State<UserSignupScreen> {
                             ),
                           ),
                           SizedBox(height: size.height * .005),
-                          TextFormField(
-                            initialValue: _location,
-                            onSaved: (value) => _location = value!,
-                            decoration: InputDecoration(
-                              fillColor: AppColors.generalColor,
-                              filled: true,
-                              hintText: "Location",
-                              hintStyle: Theme.of(context).textTheme.bodyMedium,
-                              enabledBorder: InputBorder.none,
-                              focusedBorder: InputBorder.none,
-                              prefixIcon: const Icon(
-                                Icons.pin_drop,
-                                color: AppColors.iconColor,
-                              ),
-                              border: const OutlineInputBorder(
-                                  borderSide: BorderSide.none),
-                            ),
-                          ),
+                          // TextFormField(
+                          //   style: Theme.of(context)
+                          //       .textTheme
+                          //       .bodyMedium!
+                          //       .copyWith(color: Colors.black),
+                          //   initialValue: _location,
+                          //   onSaved: (value) => _location = value!,
+                          //   decoration: InputDecoration(
+                          //     fillColor: AppColors.generalColor,
+                          //     filled: true,
+                          //     hintText: "Location",
+                          //     hintStyle: Theme.of(context).textTheme.bodyMedium,
+                          //     enabledBorder: InputBorder.none,
+                          //     focusedBorder: InputBorder.none,
+                          //     prefixIcon: const Icon(
+                          //       Icons.pin_drop,
+                          //       color: AppColors.iconColor,
+                          //     ),
+                          //     border: const OutlineInputBorder(
+                          //         borderSide: BorderSide.none),
+                          //   ),
+                          // ),
                           SizedBox(height: size.height * .01),
                           const Align(
                             alignment: Alignment.centerLeft,
@@ -158,6 +170,10 @@ class _SignUpScreenState extends State<UserSignupScreen> {
                           ),
                           SizedBox(height: size.height * .01),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             onSaved: (value) => _emergencyContactName = value!,
                             validator: (value) {
                               if (value!.isEmpty) {
@@ -180,6 +196,10 @@ class _SignUpScreenState extends State<UserSignupScreen> {
                           ),
                           SizedBox(height: size.height * .005),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             onSaved: (value) =>
                                 _emergencyContactPhoneNumber = value!,
                             keyboardType: TextInputType.phone,

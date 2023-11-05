@@ -69,7 +69,7 @@ class _AgencyEventScrenState extends State<AgencyEventScren> {
                 ),
               ),
               SizedBox(
-                height: size.height * .8,
+                height: size.height * .72,
                 child: !showAllEvents
                     ? ListView.builder(
                         itemCount: pastEvents.length,

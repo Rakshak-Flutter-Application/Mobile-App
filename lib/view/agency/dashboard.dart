@@ -160,10 +160,10 @@ class _AgencyDashBoardScreenState extends State<AgencyDashBoardScreen> {
                             ),
                           ),
                         ),
-                        Image.asset(
-                          'assets/images/agency_contact_list.jpg',
-                          scale: 15,
-                        ),
+                        // Image.asset(
+                        //   'assets/images/agency_contact_list.jpg',
+                        //   scale: 15,
+                        // ),
                       ],
                     ),
                   ),

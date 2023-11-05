@@ -3,6 +3,7 @@ import 'package:rakshak_sos/res/color.dart';
 import 'package:rakshak_sos/res/components/constant.dart';
 import 'package:rakshak_sos/res/components/round_button.dart';
 import 'package:rakshak_sos/utils/routes/routes_name.dart';
+import 'package:rakshak_sos/view/user/dashboard.dart';
 
 class UserLoginScreen extends StatefulWidget {
   const UserLoginScreen({super.key});
@@ -73,8 +74,10 @@ class _LoginScreenState extends State<UserLoginScreen> {
                                   focusedBorder: InputBorder.none,
                                   prefix: Text(
                                     "+91 ",
-                                    style:
-                                        Theme.of(context).textTheme.bodyMedium,
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .bodyMedium!
+                                        .copyWith(color: Colors.black),
                                   ),
                                   prefixIcon: const Icon(
                                     Icons.phone,
@@ -99,13 +102,19 @@ class _LoginScreenState extends State<UserLoginScreen> {
                             ),
                             InkWell(
                               onTap: () {
-                                if (_formKey.currentState!.validate()) {
-                                  _formKey.currentState!.save();
-                                  print('Phone Number: $_phoneNumber');
-                                  phoneNumber = _phoneNumber!;
-                                  Navigator.pushNamed(context, RoutesName.otp,
-                                      arguments: _phoneNumber);
-                                }
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => UserDashBoardScreen(),
+                                  ),
+                                );
+                                // if (_formKey.currentState!.validate()) {
+                                //   _formKey.currentState!.save();
+                                //   print('Phone Number: $_phoneNumber');
+                                //   phoneNumber = _phoneNumber!;
+                                //   Navigator.pushNamed(context, RoutesName.otp,
+                                //       arguments: _phoneNumber);
+                                // }
                               },
                               child: Container(
                                 height: size.height * .04,

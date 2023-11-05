@@ -21,7 +21,7 @@ class GameModel extends ChangeNotifier {
         image = "assets/hiding-under-a-table.jpg";
         message =
             'You remember to hide under a sturdy table. Debris falls around you, but the table shields you. When the shaking stops, you crawl out safely. This choice shows that "Drop, Cover, and Hold On" is vital during earthquakes.';
-        result = "win";
+        result = "lose";
         gameOver = true;
         break;
       case 2:
@@ -29,7 +29,7 @@ class GameModel extends ChangeNotifier {
         image = "assets/run-away-earthquake.jpg";
         message =
             'You panic and rush outside, but a power line falls nearby, nearly electrocuting you. You realize that running outside during an earthquake can be dangerous.';
-        result = "lose";
+        result = "win";
         gameOver = true;
         break;
       case 3:
@@ -68,6 +68,7 @@ class _EarthquakeSafetyGameState extends State<EarthquakeSafetyGame> {
     final textStyle = theme.textTheme;
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Color.fromRGBO(158, 169, 255, 1.0),
       body: SafeArea(
         child: ChangeNotifierProvider(
           create: (_) => GameModel(),

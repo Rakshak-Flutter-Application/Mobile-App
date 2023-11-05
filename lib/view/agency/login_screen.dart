@@ -53,6 +53,10 @@ class _AgencyLoginScrenState extends State<AgencyLoginScren> {
                             height: size.height * .07,
                           ),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             decoration: InputDecoration(
                                 fillColor: AppColors.generalColor,
                                 filled: true,
@@ -72,6 +76,10 @@ class _AgencyLoginScrenState extends State<AgencyLoginScren> {
                             height: size.height * .025,
                           ),
                           TextFormField(
+                            style: Theme.of(context)
+                                .textTheme
+                                .bodyMedium!
+                                .copyWith(color: Colors.black),
                             decoration: InputDecoration(
                                 filled: true,
                                 fillColor: AppColors.generalColor,

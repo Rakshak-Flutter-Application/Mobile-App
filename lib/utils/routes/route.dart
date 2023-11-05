@@ -5,6 +5,7 @@ import 'package:rakshak_sos/view/agency/events/event_list_screen.dart';
 import 'package:rakshak_sos/view/agency/homescreen.dart';
 import 'package:rakshak_sos/view/agency/login_screen.dart';
 import 'package:rakshak_sos/view/agency/signup_screen.dart';
+import 'package:rakshak_sos/view/user/emergency_contact.dart';
 import 'package:rakshak_sos/view/user/event_screen.dart';
 import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/choice_screen.dart';
@@ -54,7 +55,7 @@ class Routes {
         return MaterialPageRoute(
             builder: (context) => const AgencyEventScren());
       case RoutesName.otp:
-   final String phoneNumber = settings.arguments.toString();
+        final String phoneNumber = settings.arguments.toString();
         return MaterialPageRoute(
             builder: (context) => OTPScreen(
                   phoneNumber: phoneNumber,
@@ -80,6 +81,9 @@ class Routes {
         return MaterialPageRoute(builder: (context) => const Rail());
       case RoutesName.others:
         return MaterialPageRoute(builder: (context) => const Others());
+      case RoutesName.emergency_contact:
+        return MaterialPageRoute(
+            builder: (context) => const EmergencyContact());
       case RoutesName.quizzes:
         return MaterialPageRoute(builder: (context) => const QuizIt());
       default:

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'package:rakshak_sos/utils/routes/routes_name.dart';
-
 import 'package:rakshak_sos/res/color.dart';
-
+import 'package:rakshak_sos/view/agency/dashboard.dart';
+import 'package:rakshak_sos/view/agency/events/event_list_screen.dart';
 
 class AgencyHomeScreen extends StatefulWidget {
-  const AgencyHomeScreen({super.key});
+  const AgencyHomeScreen({Key? key}) : super(key: key);
 
   @override
   State<AgencyHomeScreen> createState() => _AgencyHomeScreenState();
@@ -15,12 +13,12 @@ class AgencyHomeScreen extends StatefulWidget {
 class _AgencyHomeScreenState extends State<AgencyHomeScreen> {
   int _selectedIndex = 0;
   final List<Widget> _screenOptions = <Widget>[
-    const AgencyHomeScreen(),
-    const AgencyHomeScreen(),
-    const AgencyHomeScreen(),
-    const AgencyHomeScreen(),
-    const AgencyHomeScreen(),
+    const AgencyDashBoardScreen(),
+    const Placeholder(),
+    const Placeholder(),
+    const AgencyEventScren(),
   ];
+
   void _onTapItem(int index) {
     setState(() {
       _selectedIndex = index;
@@ -29,39 +27,48 @@ class _AgencyHomeScreenState extends State<AgencyHomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-
-     return Scaffold(
+    return Scaffold(
       body: _screenOptions.elementAt(_selectedIndex),
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: AppColors.buttonColor,
         unselectedItemColor: AppColors.bottomNavColor,
         elevation: 10,
         items: <BottomNavigationBarItem>[
-          //home
+          // Home
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-                size: 40,
-              ),
-              label: 'Home'),
+            icon: Icon(
+              Icons.home,
+              size: 40,
+            ),
+            label: 'Home',
+          ),
 
-          //map
+          // Maps
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.map_sharp,
-                size: 40,
-              ),
-              label: 'Maps'),
+            icon: Icon(
+              Icons.map_sharp,
+              size: 40,
+            ),
+            label: 'Maps',
+          ),
 
-          //contacts
+          // Profile
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.person,
-                size: 40,
-              ),
-              label: 'Profile'),
+            icon: Icon(
+              Icons.person,
+              size: 40,
+            ),
+            label: 'Profile',
+          ),
 
-          //settings
+          // Events
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.calendar_month,
+              size: 40,
+            ),
+            label: 'Events',
+          ),
         ],
         currentIndex: _selectedIndex,
         onTap: _onTapItem,

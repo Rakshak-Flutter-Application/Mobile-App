@@ -58,6 +58,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       fillColor: AppColors.generalColor,
                                       filled: true,
@@ -73,6 +77,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Agency Full Name',
                                       fillColor: AppColors.generalColor,
@@ -87,6 +95,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Area of Expertise',
                                       fillColor: AppColors.generalColor,
@@ -101,6 +113,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       fillColor: AppColors.generalColor,
                                       filled: true,
@@ -115,6 +131,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Location',
                                       fillColor: AppColors.generalColor,
@@ -134,6 +154,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Email',
                                       fillColor: AppColors.generalColor,
@@ -148,6 +172,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Contact number',
                                       fillColor: AppColors.generalColor,
@@ -162,6 +190,10 @@ class _AgencySignupScrenState extends State<AgencySignupScren> {
                                   height: 5,
                                 ),
                                 TextFormField(
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .bodyMedium!
+                                      .copyWith(color: Colors.black),
                                   decoration: InputDecoration(
                                       hintText: 'Password',
                                       fillColor: AppColors.generalColor,

@@ -16,7 +16,7 @@ class _QuizItState extends State<QuizIt> {
   final _questions = const [
     {
       'questionText':
-          'Q1. You look out your window and see a tornado approaching. There is no tornado shelter nearby. Do you-',
+          'Q1. You look out your window and see a tornado approaching. There is no tornado shelter nearby. Do you ?',
       'answers': [
         {
           'text': 'Go outside and try to get a close-up photo of the tornado',
@@ -33,7 +33,7 @@ class _QuizItState extends State<QuizIt> {
     },
     {
       'questionText':
-          'Q2. An alert comes saying a volcano is about to erupt nearby, but there is not enough time to evacuate the area. Do you-',
+          'Q2. An alert comes saying a volcano is about to erupt nearby, but there is not enough time to evacuate the area. Do you ?',
       'answers': [
         {'text': 'Try to run for it anyway', 'score': 0},
         {
@@ -55,7 +55,7 @@ class _QuizItState extends State<QuizIt> {
     },
     {
       'questionText':
-          'Q4. You are hiking in the mountains in snow season when suddenly the snow falls out from underneath you. Do you',
+          'Q4. You are hiking in the mountains in snow season when suddenly the snow falls out from underneath you. Do you ?',
       'answers': [
         {'text': 'Grab a tree and hold on tight', 'score': 10},
         {'text': 'Pause in shock', 'score': 0},
@@ -99,14 +99,24 @@ class _QuizItState extends State<QuizIt> {
     log('qi>>>' + _questionIndex.toString());
     log('qL<<<' + _questions.length.toString());
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text(
-          "Quiz It",
-          style: TextStyle(
-            color: Colors.white,
-          ),
+        title: Row(
+          children: [
+            Image.asset(
+              "assets/logo.png",
+              width: 50,
+            ),
+            Text(
+              "  Quiz It",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w700),
+            ),
+          ],
         ),
-        backgroundColor: AppColors.buttonColor,
+        backgroundColor: Color.fromRGBO(158, 169, 255, 1.0),
         centerTitle: true,
       ),
       body: Padding(

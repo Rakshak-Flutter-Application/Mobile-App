@@ -15,145 +15,157 @@ class _listState extends State<list> {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: AppColors.buttonColor,
         centerTitle: true,
         title: Text(
           "Disaster Datasheet",
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
         ),
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(8),
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.cyclone);
-                },
-                child: Text(
-                  'Cyclone',
-                  style: TextStyle(fontSize: 20),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.cyclone);
+                  },
+                  child: Text(
+                    'Cyclone',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.earthquake);
-                },
-                child: Text(
-                  'Earthquake',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.earthquake);
+                  },
+                  child: Text(
+                    'Earthquake',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.fire);
-                },
-                child: Text(
-                  'Fire',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.fire);
+                  },
+                  child: Text(
+                    'Fire',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.flight);
-                },
-                child: Text(
-                  'Flight Crashes',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.flight);
+                  },
+                  child: Text(
+                    'Flight Crashes',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.floods);
-                },
-                child: Text(
-                  'Floods',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.floods);
+                  },
+                  child: Text(
+                    'Floods',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.landslides);
-                },
-                child: Text(
-                  'Landslides',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.landslides);
+                  },
+                  child: Text(
+                    'Landslides',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.rail);
-                },
-                child: Text(
-                  'Rail Disaster',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.rail);
+                  },
+                  child: Text(
+                    'Rail Disaster',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Container(
-              height: size.width * .1,
-              //color: Colors.amber[600],
-              child: TextButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, RoutesName.others);
-                },
-                child: Text(
-                  'Other',
-                  style: TextStyle(fontSize: 20),
+            Divider(),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: size.width * .1,
+                //color: Colors.amber[600],
+                child: TextButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, RoutesName.others);
+                  },
+                  child: Text(
+                    'Other',
+                    style: TextStyle(fontSize: 20),
+                  ),
                 ),
               ),
             ),
-          ),
-        ],
+            Divider(),
+          ],
+        ),
       ),
     );
   }

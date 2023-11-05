@@ -31,39 +31,45 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            // resultPhrase,
-            '3/4',
-            style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
-            textAlign: TextAlign.center,
-          ),
-          TextButton(
-            onPressed: () => Navigator.pushNamed(context, RoutesName.quizzes),
-            child: Container(
-              color: Colors.green,
-              padding: const EdgeInsets.all(14),
-              child: const Text(
-                'Restart Quiz',
-                style: TextStyle(color: Colors.black),
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset("assets/win.gif"),
+            Text(
+              // resultPhrase,
+              '4/4',
+              style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.center,
+            ),
+            TextButton(
+              onPressed: () => Navigator.pushNamed(context, RoutesName.quizzes),
+              child: Container(
+                color: Color.fromRGBO(158, 169, 255, 1.0),
+                padding: const EdgeInsets.all(14),
+                child: const Text(
+                  'Restart Quiz',
+                  style: TextStyle(color: Colors.black),
+                ),
               ),
             ),
-          ),
-          TextButton(
-            onPressed: () => Navigator.pushNamed(context, RoutesName.user_home),
-            child: Container(
-              color: Colors.green,
-              padding: const EdgeInsets.all(14),
-              child: const Text(
-                'Home Page',
-                style: TextStyle(color: AppColors.textColor),
+            TextButton(
+              onPressed: () =>
+                  Navigator.pushNamed(context, RoutesName.user_home),
+              child: Container(
+                color: Color.fromRGBO(158, 169, 255, 1.0),
+                padding: const EdgeInsets.all(14),
+                child: const Text(
+                  'Home Page',
+                  style: TextStyle(color: AppColors.textColor),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:rakshak_sos/utils/routes/routes_name.dart';
 
 import 'package:rakshak_sos/res/color.dart';
+import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/user/dashboard.dart';
-
+import 'package:rakshak_sos/view/user/event_screen.dart';
 
 class UserHomeScreen extends StatefulWidget {
   const UserHomeScreen({super.key});
@@ -18,8 +19,7 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
     const UserDashBoardScreen(),
     const UserDashBoardScreen(),
     const UserDashBoardScreen(),
-    const UserDashBoardScreen(),
-    const UserDashBoardScreen(),
+    const UserEventScreen(),
   ];
   void _onTapItem(int index) {
     setState(() {
@@ -59,8 +59,8 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
                 size: 40,
               ),
               label: 'Profile'),
-              //events
-               BottomNavigationBarItem(
+          //events
+          BottomNavigationBarItem(
               icon: Icon(
                 Icons.event,
                 size: 40,
@@ -72,7 +72,6 @@ class _UserHomeScreenState extends State<UserHomeScreen> {
         currentIndex: _selectedIndex,
         onTap: _onTapItem,
       ),
-
     );
   }
 }
