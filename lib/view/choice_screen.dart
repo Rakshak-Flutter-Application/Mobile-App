@@ -14,19 +14,21 @@ class _ChoiceScreenState extends State<ChoiceScreen> {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Color.fromRGBO(163, 173, 251, 1),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            color: Colors.red,
-            height: size.height * .1,
-            width: size.width * .2,
+          Image.asset(
+            "assets/logo.png",
           ),
           Center(
             child: Text(
-              "RAKSHAK SOS",
-              style: Theme.of(context).textTheme.displayLarge,
+              "रक्षक",
+              style: TextStyle(
+                  fontSize: 50,
+                  fontWeight: FontWeight.w500,
+                  fontStyle: FontStyle.italic),
             ),
           ),
           SizedBox(

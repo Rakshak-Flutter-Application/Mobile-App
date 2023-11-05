@@ -8,5 +8,5 @@ class AppColors {
   static const Color textColor = Colors.white;
   static const Color textColor1 = Colors.white;
   static const Color iconColor = Colors.deepPurple;
-  static const Color screenColor = Color.fromARGB(255, 235, 180, 255);
+  static const Color screenColor = Color.fromRGBO(163, 173, 251, 1);
 }

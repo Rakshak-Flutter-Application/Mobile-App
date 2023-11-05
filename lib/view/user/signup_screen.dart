@@ -60,10 +60,8 @@ class _SignUpScreenState extends State<UserSignupScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                height: size.height * .1,
-                width: size.width * .3,
-                color: Colors.amber,
+              Image.asset(
+                "assets/logo.png",
               ),
               Expanded(
                 child: Stack(
@@ -265,7 +263,7 @@ class _SignUpScreenState extends State<UserSignupScreen> {
       print('Emergency Contact Phone Number: $_emergencyContactPhoneNumber');
 
       // After processing, you can navigate to the next screen or take any other actions.
-      await Navigator.pushNamed(context, RoutesName.user_home);
+      await Navigator.pushNamed(context, RoutesName.user_dashboard);
     }
   }
 }

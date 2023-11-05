@@ -25,4 +25,5 @@ class RoutesName {
   static const String quizzes = "quizzes";
   static const String answer = "answerr";
   static const String emergency_contact = "emergency contact";
+  static const String user_dashboard = "user dashboard";
 }

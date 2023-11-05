@@ -32,7 +32,7 @@ class _RoundButtonState extends State<RoundButton> {
         margin: EdgeInsets.symmetric(
             vertical: size.width * .05, horizontal: size.width * .1),
         decoration: BoxDecoration(
-            color: AppColors.buttonColor,
+            color: Color.fromRGBO(255, 214, 255, 1.0),
             borderRadius: BorderRadius.circular(size.width * .1)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -40,9 +40,9 @@ class _RoundButtonState extends State<RoundButton> {
             Text(
               widget.text,
               style: TextStyle(
-                color: AppColors.generalColor,
-                fontSize: size.width * .06,
-              ),
+                  // color: AppColors.generalColor,
+                  fontSize: size.width * .06,
+                  fontWeight: FontWeight.w500),
             ),
           ],
         ),
