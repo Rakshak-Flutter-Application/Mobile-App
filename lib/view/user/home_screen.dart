@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rakshak_sos/utils/routes/routes_name.dart';
-
 import 'package:rakshak_sos/res/color.dart';
-import 'package:rakshak_sos/view/choice_game/choice_game.dart';
 import 'package:rakshak_sos/view/user/dashboard.dart';
 import 'package:rakshak_sos/view/user/event_screen.dart';
 
