@@ -1,7 +1,6 @@
 ## Setup Guide
 
     git clone https://github.com/SIH-2023-JAI-SHREE-RAM/Mobile-App.git
-    cd git-mobile-app
     flutter run
     
   ---------
