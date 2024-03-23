@@ -24,7 +24,7 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
   Create the issue
   Create separate branch
 ---------
-     git checkout -b <issue name>
+     git checkout -b <issue name/ branch name>
 ---------
   work on the particular branch
   After the issue is resolved
@@ -32,7 +32,7 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 -----------
     git add .
     git commit -m "message"
-    git push origin <branch name"
+    git push origin <branch name>
     
 ---------
   Check if it conflicts with "main" branch
