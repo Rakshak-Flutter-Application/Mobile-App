@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rakshak_sos/res/color.dart';
-import 'package:rakshak_sos/view/agency/dashboard.dart';
+import 'package:rakshak_sos/view/agency/agency_dashboard.dart';
 import 'package:rakshak_sos/view/agency/events/event_list_screen.dart';
 
 class AgencyHomeScreen extends StatefulWidget {
