@@ -10,7 +10,7 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 
 --------
     Start your IDE (preferably VS Code)
-    Open the respective folder 
+    Open Mobile-App folder
 --------
     flutter doctor
     flutter run
