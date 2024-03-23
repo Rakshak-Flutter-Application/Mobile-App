@@ -4,4 +4,41 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 
 ## Getting Started
 -------
-  git clone https://github.com/SIH-2023-JAI-SHREE-RAM/Mobile-App.git
+    cd C:/
+    cd <your directory name in which your projects exists> ex- cd src
+    git clone https://github.com/SIH-2023-JAI-SHREE-RAM/Mobile-App.git
+
+--------
+    Start your IDE (preferably VS Code)
+    Open the respective folder 
+--------
+    flutter doctor
+    flutter run
+---------
+
+## Contribution Guidelines
+  Find the bug
+  Create the issue
+  Create separate branch
+---------
+     git checkout -b <issue name>
+---------
+  work on the particular branch
+  After the issue is resolved
+  
+-----------
+    git add .
+    git commit -m "message"
+    git push origin <branch name"
+    
+---------
+  Check if it conflicts with "main" branch
+  Resolve the conflicts
+  Create the PR
+
+And your code is done to be reviewed
+
+-------
+    
+
+
