@@ -17,6 +17,7 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 ---------
 
 ## Contribution Guidelines
+
   Find the bug
   Create the issue
   Create separate branch
