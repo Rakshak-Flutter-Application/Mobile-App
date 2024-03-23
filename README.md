@@ -4,8 +4,8 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 
 ## Getting Started
 -------
-    cd C:/
-    cd <your directory name in which your projects exists> ex- cd src
+    cd <directory name>
+    cd <your folder name in which your projects exists> ex- cd src
     git clone https://github.com/SIH-2023-JAI-SHREE-RAM/Mobile-App.git
 
 --------
@@ -17,6 +17,8 @@ The Rakshak SOS Rescue Flutter App is a powerful mobile application designed to 
 ---------
 
 ## Contribution Guidelines
+
+-------
 
   Find the bug
   Create the issue
